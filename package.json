@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "i18n:extract": "transloco-keys-manager extract --project my-app --translations-path assets/i18n",
+    "i18n:find": "transloco-keys-manager find --project my-app --translations-path assets/i18n"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +21,7 @@
     "@angular/platform-browser": "~11.2.14",
     "@angular/platform-browser-dynamic": "~11.2.14",
     "@angular/router": "~11.2.14",
+    "@ngneat/transloco": "^2.22.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
@@ -27,6 +30,7 @@
     "@angular-devkit/build-angular": "~0.1102.13",
     "@angular/cli": "~11.2.14",
     "@angular/compiler-cli": "~11.2.14",
+    "@ngneat/transloco-keys-manager": "^2.7.4",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
@@ -37,6 +41,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.5.0",
+    "ngx-build-plus": "^12.2.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
